@@ -1,0 +1,34 @@
+.index {
+  padding: 20px;
+  
+  .header {
+    margin-bottom: 20px;
+    
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  
+  .activity-list {
+    .activity-item {
+      background: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      
+      .activity-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        display: block;
+      }
+      
+      .activity-desc {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+}
