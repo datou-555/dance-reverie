@@ -1,15 +1,14 @@
-export default {
-  pages: ["pages/index/index", "pages/profile/index"],
+export default defineAppConfig({
+  pages: ["pages/index/index", "pages/register/index", "pages/profile/index"],
   window: {
     backgroundTextStyle: "light",
-    navigationBarBackgroundColor: "#fff",
-    navigationBarTitleText: "WeChat",
-    navigationBarTextStyle: "black",
+    navigationBarBackgroundColor: "#000000",
+    navigationBarTextStyle: "white",
   },
   tabBar: {
     color: "#999",
     selectedColor: "#333",
-    backgroundColor: "#fff",
+    backgroundColor: "#000000",
     borderStyle: "black",
     list: [
       {
@@ -26,4 +25,4 @@ export default {
       },
     ],
   },
-};
+});

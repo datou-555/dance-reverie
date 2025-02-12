@@ -1,0 +1,93 @@
+.ballot-card {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .card-btn {
+    position: absolute;
+    color: blue;
+    bottom: 32px;
+    right: 32px;
+    z-index: 30;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 28px;
+  }
+
+
+.logo-container {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 10;
+  
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.content-container {
+  position: relative;
+  height: 100%;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    z-index: 10;
+  }
+  
+  .background-image {
+    position: relative;
+    height: 480px;
+    
+    .main-image {
+      width: 100%;
+      height: 100%;
+      filter: brightness(0.75);
+    }
+  }
+}
+
+.text-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 48px;
+  z-index: 20;
+  color: #fff;
+  
+  .title {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    display: block;
+    font-size: 24px;
+    opacity: 0.9;
+    white-space: pre-line;
+  }
+}
+
+
+  
+}
+

@@ -1,34 +1,241 @@
-.index {
-  padding: 20px;
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #0A0A0A;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
+
+.status-bar {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10,10,10,0.9);
+  backdrop-filter: blur(10px);
   
-  .header {
-    margin-bottom: 20px;
+  .time {
+    color: #D4AF37;
+    font-size: 14px;
+  }
+  
+  .signal-group {
+    display: flex;
+    gap: 8px;
+    
+    .icon {
+      color: #D4AF37;
+      font-size: 16px;
+    }
+  }
+}
+
+.header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .logo-group {
+    display: flex;
+    align-items: center;
+    
+    .icon-crown {
+      color: #D4AF37;
+      font-size: 20px;
+      margin-right: 8px;
+    }
     
     .title {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: bold;
+    }
+    
+    .subtitle {
+      color: #D4AF37;
+      font-size: 12px;
     }
   }
   
-  .activity-list {
-    .activity-item {
-      background: #fff;
+  .menu-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #D4AF37;
+    border-radius: 50%;
+    
+    .icon-ellipsis {
+      color: #D4AF37;
+    }
+  }
+}
+
+.nav-grid {
+  padding: 0 24px 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .icon-wrapper {
+      width: 48px;
+      height: 48px;
+      background: #1A1A1A;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      .icon {
+        color: #D4AF37;
+        font-size: 20px;
+      }
+    }
+    
+    .nav-text {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    
+    .nav-subtext {
+      color: #D4AF37;
+      font-size: 10px;
+    }
+  }
+}
+
+.register-btn {
+  margin: 0 16px 24px;
+  background: #D4AF37;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px;
+  
+  .en-text {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+}
+
+.banner {
+  position: relative;
+  height: 192px;
+  
+  image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .pagination {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      
+      &.active {
+        background: #D4AF37;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 0 16px 80px;
+  
+  .card {
+    position: relative;
+    height: 144px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    
+    image {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .card-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       padding: 16px;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, transparent 100%);
       
-      .activity-title {
-        font-size: 18px;
-        font-weight: 500;
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 8px;
-        display: block;
+        
+        .card-title {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        
+        .card-subtitle {
+          color: #D4AF37;
+          font-size: 14px;
+        }
+        
+        .apply-btn {
+          background: #D4AF37;
+          color: black;
+          font-size: 14px;
+          padding: 4px 16px;
+          border-radius: 4px;
+        }
       }
       
-      .activity-desc {
-        font-size: 14px;
-        color: #666;
+      .card-details {
+        font-size: 12px;
+        line-height: 1.5;
       }
+    }
+  }
+}
+
+.bottom-tabs {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(10,10,10,0.9);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(212,175,55,0.2);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 8px 0;
+  
+  .tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #888;
+    
+    &.active {
+      color: #D4AF37;
+    }
+    
+    .icon {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    
+    .tab-text {
+      font-size: 12px;
     }
   }
 }
