@@ -3,14 +3,6 @@ import { Component } from "react";
 import { useLoad } from "@tarojs/taro";
 import "./index.scss";
 
-// 确保在组件之前定义页面配置
-definePageConfig({
-  navigationBarTitleText: "",
-  navigationBarBackgroundColor: "#000000",
-  navigationBarTextStyle: "#000000",
-  // navigationStyle: "custom", // 使用自定义导航栏
-});
-
 const cardImages = {
   judges:
     "https://public.readdy.ai/ai/img_res/6fa9eb82e54b24d58ec724937019f85c.jpg",
@@ -135,12 +127,12 @@ export default class Index extends Component {
         </View>
 
         {/* Registration Button */}
-        <View style={{ padding: "14px 20px" }}>
+        <View style={{ padding: "16px 20px" }}>
           <View
             style={{
               backgroundColor: "#D4AF37",
               padding: "9px 12px",
-              borderRadius: "4px",
+              borderRadius: "18px",
               textAlign: "center",
             }}
           >

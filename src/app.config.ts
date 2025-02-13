@@ -6,8 +6,8 @@ export default defineAppConfig({
     navigationBarTextStyle: "white",
   },
   tabBar: {
-    color: "#999",
-    selectedColor: "#333",
+    color: "#9498a5",
+    selectedColor: "#c4ab3c",
     backgroundColor: "#000000",
     borderStyle: "black",
     list: [
@@ -15,13 +15,13 @@ export default defineAppConfig({
         pagePath: "pages/index/index",
         text: "首页",
         iconPath: "assets/home.png",
-        selectedIconPath: "assets/home.png",
+        selectedIconPath: "assets/home-active.png",
       },
       {
         pagePath: "pages/profile/index",
         text: "我的",
-        iconPath: "assets/profile.png",
-        selectedIconPath: "assets/profile.png",
+        iconPath: "assets/mine.png",
+        selectedIconPath: "assets/mine-active.png",
       },
     ],
   },
